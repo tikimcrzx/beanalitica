@@ -1,0 +1,44 @@
+{
+  "name": "chatbot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start:dev": "nodemon main.js",
+    "start": "node main.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tikimcrzx/chatbot.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tikimcrzx/chatbot/issues"
+  },
+  "homepage": "https://github.com/tikimcrzx/chatbot#readme",
+  "dependencies": {
+    "nodemon": "^2.0.2",
+    "@nestjs/common": "^6.7.2",
+    "@nestjs/core": "^6.7.2",
+    "@nestjs/jwt": "^6.1.2",
+    "@nestjs/mongoose": "^6.1.2",
+    "@nestjs/passport": "^6.2.0",
+    "@nestjs/platform-express": "^6.7.2",
+    "@types/jsonwebtoken": "^8.3.5",
+    "@types/mongoose": "^5.5.23",
+    "bcryptjs": "^2.4.3",
+    "helmet": "^3.21.2",
+    "jsonwebtoken": "^8.5.1",
+    "moment": "^2.24.0",
+    "mongoose": "^5.7.7",
+    "mongoose-autopopulate": "^0.12.0",
+    "nest-winston": "^1.1.4",
+    "passport": "^0.4.1",
+    "passport-jwt": "^4.0.0",
+    "reflect-metadata": "^0.1.13",
+    "rxjs": "^6.5.4",
+    "winston": "^3.2.1"
+  }
+}
