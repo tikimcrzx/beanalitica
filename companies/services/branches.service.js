@@ -165,7 +165,7 @@ let BranchesService = class BranchesService {
       );
     }
     return {
-      fulfillmentMessages: [array],
+      fulfillmentMessages: array,
     };
   }
   messageBot(message, source) {
