@@ -157,7 +157,7 @@ let BranchesService = class BranchesService {
     for (let index = 0; index < branch.menu.length; index++) {
       array.push(
         this.messageBots(
-          branch.menu[index].name,
+          "Ordenar",
           branch.menu[index].name,
           `${branch.menu[index].details[0].size}: ${branch.menu[index].details[0].price} ${branch.menu[index].details[1].size}: ${branch.menu[index].details[1].price} ${branch.menu[index].details[2].size}: ${branch.menu[index].details[2].price}`,
           branch.menu[index].image
