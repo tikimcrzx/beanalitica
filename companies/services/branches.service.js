@@ -160,14 +160,6 @@ let BranchesService = class BranchesService {
         )
       );
     }
-    return this.reports();
-
-    return this.messageBots(
-      branch.menu[0].name,
-      branch.menu[0].name,
-      branch.menu[0].name,
-      branch.menu[0].image
-    );
     return {
       fulfillmentText: this.messageBots(
         branch.menu[0].name,
@@ -177,6 +169,14 @@ let BranchesService = class BranchesService {
       ),
       source: "menu",
     };
+    return this.reports();
+
+    return this.messageBots(
+      branch.menu[0].name,
+      branch.menu[0].name,
+      branch.menu[0].name,
+      branch.menu[0].image
+    );
     return { fulfillmentMessages: array };
   }
   messageBot(message, source) {
