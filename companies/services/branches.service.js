@@ -161,32 +161,18 @@ let BranchesService = class BranchesService {
       );
     }
     return {
-      facebook: {
-        attachment: {
-          type: "template",
-          payload: {
-            template_type: "button",
-            text: "ver menu",
-            buttons: [
-              {
-                type: "web_url",
-                url: branch.menu[0].image,
-                title: branch.menu[0].name,
-              },
-              {
-                type: "web_url",
-                url: branch.menu[0].image,
-                title: branch.menu[0].name,
-              },
-              {
-                type: "web_url",
-                url: branch.menu[0].image,
-                title: branch.menu[0].name,
-              },
-            ],
+      fulfillmentMessages: [
+        {
+          quickReplies: {
+            title: "Seleccione una opción",
+            quickReplies: ["cholo", "fresa", "naco"],
           },
+          plataform: "FACEBOOK",
         },
-      },
+        {
+          text: { text: ["Dummy"] },
+        },
+      ],
     };
     return [
       {
