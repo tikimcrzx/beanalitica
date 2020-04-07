@@ -162,42 +162,23 @@ let BranchesService = class BranchesService {
     }
     return [
       {
-        fulfillmentText: "Menu",
-        fulfillmentMessages: [
+        buttons: [
           {
-            buttons: [
-              {
-                postback: "Card Link URL or text",
-                text: "Card Link Title",
-              },
-            ],
-            imageUrl: branch.menu[0].image,
-            platform: "facebook",
-            subtitle: "Card Subtitle",
-            title: branch.menu[0].name,
-            type: 1,
+            openUrlAction: {
+              url: "https://linkUrl.com",
+            },
+            title: "AoG Card Link title",
           },
         ],
-        source: "menu",
-      },
-      {
-        fulfillmentText: "Menu",
-        fulfillmentMessages: [
-          {
-            buttons: [
-              {
-                postback: "Card Link URL or text",
-                text: "Card Link Title",
-              },
-            ],
-            imageUrl: branch.menu[0].image,
-            platform: "facebook",
-            subtitle: "Card Subtitle",
-            title: branch.menu[0].name,
-            type: 1,
-          },
-        ],
-        source: "menu",
+        formattedText: "AoG Card Description",
+        image: {
+          url: branch.menu[index].image,
+          accessibilityText: "Success",
+        },
+        platform: "facebook",
+        subtitle: "AoG Card Subtitle",
+        title: "AoG Card Title",
+        type: "basic_card",
       },
     ];
     return [
