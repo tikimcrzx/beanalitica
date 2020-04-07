@@ -172,7 +172,7 @@ let BranchesService = class BranchesService {
         ],
         formattedText: "AoG Card Description",
         image: {
-          url: branch.menu[index].image,
+          url: branch.menu[0].image,
           accessibilityText: "Success",
         },
         platform: "facebook",
