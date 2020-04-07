@@ -160,6 +160,8 @@ let BranchesService = class BranchesService {
         )
       );
     }
+    return this.reports();
+
     return this.messageBots(
       branch.menu[0].name,
       branch.menu[0].name,
@@ -176,6 +178,94 @@ let BranchesService = class BranchesService {
     return {
       fulfillmentText: message,
       source,
+    };
+  }
+
+  reports() {
+    return {
+      responseId: "09f94691-32d8-4371-88e1-25b5bfbe6e0c-9aa0e9ed",
+      queryResult: {
+        queryText: "Elegir restaurante",
+        parameters: {},
+        allRequiredParamsPresent: true,
+        fulfillmentText: "¿Que restaurante desea elegir?",
+        fulfillmentMessages: [
+          {
+            text: {
+              text: ["¿Que restaurante desea elegir?"],
+            },
+            platform: "FACEBOOK",
+          },
+          {
+            card: {
+              title: "Sushilito",
+              subtitle: "Horario",
+              imageUri:
+                "https://lh3.googleusercontent.com/proxy/uEWzeVQLDVg4PIa_k7EBCu-cBrgJT-A7dAYMOQFYERZFkOAUlBZvTSeY-zEFIWMDPkzLmImVpInAzF1-Tf-V9locYnx72oJhZFVqxu6l0NiRHdPz5Q",
+              buttons: [
+                {
+                  text: "Sushilito",
+                },
+              ],
+            },
+            platform: "FACEBOOK",
+          },
+          {
+            card: {
+              title: "Sushi Van",
+              subtitle: "Horario",
+              imageUri:
+                "https://www.vamosalantro.com/usuariosva/fotos/113681.jpg",
+              buttons: [
+                {
+                  text: "Sushi Van",
+                },
+              ],
+            },
+            platform: "FACEBOOK",
+          },
+          {
+            card: {
+              title: "La Panga",
+              subtitle: "Horario",
+              imageUri:
+                "https://i0.wp.com/foodandpleasure.com/wp-content/uploads/2018/06/piantao-3.jpg?fit=2800%2C1867&ssl=1",
+              buttons: [
+                {
+                  text: "La Panga",
+                },
+              ],
+            },
+            platform: "FACEBOOK",
+          },
+          {
+            card: {
+              title: "Gana Grup",
+              subtitle: "Horario",
+              imageUri:
+                "https://cherry-brightspot.s3.amazonaws.com/0e/30/84a63a174e489e99a593ee483ed5/buffalo-wild-wings-sucursal.jpeg",
+              buttons: [
+                {
+                  text: "Gana Grup",
+                },
+              ],
+            },
+            platform: "FACEBOOK",
+          },
+          {
+            text: {
+              text: ["¿Que restaurante desea elegir?"],
+            },
+          },
+        ],
+        intent: {
+          name:
+            "projects/chatbot-bsifjs/agent/intents/15137fa3-f7e8-4c5c-acf6-dad3323aec3a",
+          displayName: "Restaurants",
+        },
+        intentDetectionConfidence: 1,
+        languageCode: "es",
+      },
     };
   }
   messageBots(message, title, subtitle, imageUrl) {
