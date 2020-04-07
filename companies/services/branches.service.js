@@ -160,6 +160,25 @@ let BranchesService = class BranchesService {
         )
       );
     }
+    return {
+      fulfillmentText: "Menu",
+      fulfillmentMessages: [
+        {
+          buttons: [
+            {
+              postback: "Card Link URL or text",
+              text: "Card Link Title",
+            },
+          ],
+          imageUrl: branch.menu[0].image,
+          platform: "facebook",
+          subtitle: "Card Subtitle",
+          title: branch.menu[0].name,
+          type: 1,
+        },
+      ],
+      source: "menu",
+    };
     return [
       {
         buttons: [
