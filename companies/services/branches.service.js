@@ -140,7 +140,7 @@ let BranchesService = class BranchesService {
           model: "Ingredient",
           select: "name details",
         },
-        select: "name image",
+        select: "name image details",
       })
       .populate({
         path: "company",
@@ -169,55 +169,17 @@ let BranchesService = class BranchesService {
         this.messageBots(
           branch.menu[0].name,
           branch.menu[0].name,
-          branch.menu[0].name,
+          `${branch.menu[0].details[0].size}: ${branch.menu[0].details[0].price} ${branch.menu[0].details[1].size}: ${branch.menu[0].details[1].price} ${branch.menu[0].details[2].size}: ${branch.menu[0].details[2].price}`,
           branch.menu[0].image
         ),
         this.messageBots(
           branch.menu[0].name,
           branch.menu[0].name,
-          branch.menu[0].name,
+          `${branch.menu[0].details[0].size}: ${branch.menu[0].details[0].price} ${branch.menu[0].details[1].size}: ${branch.menu[0].details[1].price} ${branch.menu[0].details[2].size}: ${branch.menu[0].details[2].price}`,
           branch.menu[0].image
         ),
       ],
     };
-    return {
-      fulfillmentMessages: [
-        {
-          quickReplies: {
-            title: "Seleccione una opción",
-            quickReplies: ["cholo", "fresa", "naco"],
-          },
-          plataform: "FACEBOOK",
-        },
-        {
-          text: { text: ["Dummy"] },
-        },
-      ],
-    };
-    return [
-      {
-        buttons: [
-          {
-            postback: "Card Link URL or text",
-            text: "Card Link Title",
-          },
-        ],
-        imageUrl: branch.menu[0].image,
-        platform: "facebook",
-        subtitle: "Card Subtitle",
-        title: "Card Title",
-        type: 1,
-      },
-    ];
-    return this.reports();
-
-    return this.messageBots(
-      branch.menu[0].name,
-      branch.menu[0].name,
-      branch.menu[0].name,
-      branch.menu[0].image
-    );
-    return { fulfillmentMessages: array };
   }
   messageBot(message, source) {
     return {
