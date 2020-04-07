@@ -159,26 +159,13 @@ let BranchesService = class BranchesService {
         this.messageBots(
           branch.menu[index].name,
           branch.menu[index].name,
-          branch.menu[index].name,
+          `${branch.menu[index].details[0].size}: ${branch.menu[0].details[0].price} ${branch.menu[0].details[1].size}: ${branch.menu[0].details[1].price} ${branch.menu[0].details[2].size}: ${branch.menu[0].details[2].price}`,
           branch.menu[index].image
         )
       );
     }
     return {
-      fulfillmentMessages: [
-        this.messageBots(
-          branch.menu[0].name,
-          branch.menu[0].name,
-          `${branch.menu[0].details[0].size}: ${branch.menu[0].details[0].price} ${branch.menu[0].details[1].size}: ${branch.menu[0].details[1].price} ${branch.menu[0].details[2].size}: ${branch.menu[0].details[2].price}`,
-          branch.menu[0].image
-        ),
-        this.messageBots(
-          branch.menu[0].name,
-          branch.menu[0].name,
-          `${branch.menu[0].details[0].size}: ${branch.menu[0].details[0].price} ${branch.menu[0].details[1].size}: ${branch.menu[0].details[1].price} ${branch.menu[0].details[2].size}: ${branch.menu[0].details[2].price}`,
-          branch.menu[0].image
-        ),
-      ],
+      fulfillmentMessages: [array],
     };
   }
   messageBot(message, source) {
