@@ -161,13 +161,32 @@ let BranchesService = class BranchesService {
       );
     }
     return {
-      messages: [
-        {
-          imageUrl: branch.menu[0].image,
-          platform: "facebook",
-          type: 3,
+      facebook: {
+        attachment: {
+          type: "template",
+          payload: {
+            template_type: "button",
+            text: "ver menu",
+            buttons: [
+              {
+                type: "web_url",
+                url: branch.menu[0].image,
+                title: branch.menu[0].name,
+              },
+              {
+                type: "web_url",
+                url: branch.menu[0].image,
+                title: branch.menu[0].name,
+              },
+              {
+                type: "web_url",
+                url: branch.menu[0].image,
+                title: branch.menu[0].name,
+              },
+            ],
+          },
         },
-      ],
+      },
     };
     return [
       {
