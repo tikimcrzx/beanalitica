@@ -168,6 +168,12 @@ let BranchesService = class BranchesService {
           branch.menu[0].name,
           branch.menu[0].image
         ),
+        this.messageBots(
+          branch.menu[0].name,
+          branch.menu[0].name,
+          branch.menu[0].name,
+          branch.menu[0].image
+        ),
       ],
     };
     return {
