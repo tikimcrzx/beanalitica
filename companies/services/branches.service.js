@@ -169,7 +169,12 @@ let BranchesService = class BranchesService {
       branch.menu[0].image
     );
     return {
-      fulfillmentText: branch.menu[0].name,
+      fulfillmentText: this.messageBots(
+        branch.menu[0].name,
+        branch.menu[0].name,
+        branch.menu[0].name,
+        branch.menu[0].image
+      ),
       source: "menu",
     };
     return { fulfillmentMessages: array };
