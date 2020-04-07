@@ -135,7 +135,11 @@ let BranchesService = class BranchesService {
       .populate({
         path: "menu",
         model: "Dish",
-        populate: { path: "ingredients", model: "Ingredient", select: "name" },
+        populate: {
+          path: "ingredients",
+          model: "Ingredient",
+          select: "name details",
+        },
         select: "name image",
       })
       .populate({
