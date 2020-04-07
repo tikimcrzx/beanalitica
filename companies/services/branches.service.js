@@ -162,6 +162,16 @@ let BranchesService = class BranchesService {
     }
     return {
       fulfillmentMessages: [
+        this.messageBots(
+          branch.menu[0].name,
+          branch.menu[0].name,
+          branch.menu[0].name,
+          branch.menu[0].image
+        ),
+      ],
+    };
+    return {
+      fulfillmentMessages: [
         {
           quickReplies: {
             title: "Seleccione una opción",
