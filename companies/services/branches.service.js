@@ -160,27 +160,15 @@ let BranchesService = class BranchesService {
         )
       );
     }
-    return [
-      {
-        buttons: [
-          {
-            openUrlAction: {
-              url: "https://linkUrl.com",
-            },
-            title: "AoG Card Link title",
-          },
-        ],
-        formattedText: "AoG Card Description",
-        image: {
-          url: branch.menu[0].image,
-          accessibilityText: "Success",
+    return {
+      messages: [
+        {
+          imageUrl: branch.menu[0].image,
+          platform: "facebook",
+          type: 3,
         },
-        platform: "facebook",
-        subtitle: "AoG Card Subtitle",
-        title: "AoG Card Title",
-        type: "basic_card",
-      },
-    ];
+      ],
+    };
     return [
       {
         buttons: [
