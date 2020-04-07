@@ -309,12 +309,12 @@ let BranchesService = class BranchesService {
       },
     };
   }
-  messageBots(message, title, subtitle, imageUrl) {
+  messageBots(message, title, subtitle, imageUri) {
     return {
       card: {
         title,
         subtitle,
-        imageUrl,
+        imageUri,
         buttons: [
           {
             text: message,
