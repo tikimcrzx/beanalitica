@@ -161,12 +161,7 @@ let BranchesService = class BranchesService {
       );
     }
     return {
-      fulfillmentText: this.messageBots(
-        branch.menu[0].name,
-        branch.menu[0].name,
-        branch.menu[0].name,
-        branch.menu[0].image
-      ),
+      fulfillmentText: branch.menu[0].name,
       source: "menu",
     };
     return this.reports();
