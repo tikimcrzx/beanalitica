@@ -160,6 +160,10 @@ let BranchesService = class BranchesService {
         )
       );
     }
+    return {
+      fulfillmentText: branch.menu[0].name,
+      source: "menu",
+    };
     return { fulfillmentMessages: array };
   }
   messageBot(message, source) {
