@@ -159,7 +159,7 @@ let BranchesService = class BranchesService {
         this.messageBots(
           branch.menu[index].name,
           branch.menu[index].name,
-          `${branch.menu[index].details[0].size}: ${branch.menu[0].details[0].price} ${branch.menu[0].details[1].size}: ${branch.menu[0].details[1].price} ${branch.menu[0].details[2].size}: ${branch.menu[0].details[2].price}`,
+          `${branch.menu[index].details[0].size}: ${branch.menu[index].details[0].price} ${branch.menu[index].details[1].size}: ${branch.menu[index].details[1].price} ${branch.menu[index].details[2].size}: ${branch.menu[index].details[2].price}`,
           branch.menu[index].image
         )
       );
