@@ -59,7 +59,7 @@ let BranchesService = class BranchesService {
         path: "menu",
         model: "Dish",
         populate: { path: "ingredients", model: "Ingredient", select: "name" },
-        select: "name",
+        select: "name details",
       })
       .populate({
         path: "company",
