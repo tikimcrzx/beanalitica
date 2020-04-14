@@ -272,7 +272,7 @@ let BranchesService = class BranchesService {
         buttons: [
           {
             text: message,
-            postback: "PostBack",
+            postback: title,
           },
         ],
       },
