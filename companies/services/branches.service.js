@@ -277,6 +277,7 @@ let BranchesService = class BranchesService {
         ],
       },
       platfrom: "FACEBOOK",
+      sendAsMessage: true,
     };
   }
   async responseBot(name, intent) {
