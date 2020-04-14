@@ -272,11 +272,11 @@ let BranchesService = class BranchesService {
         buttons: [
           {
             text: message,
-            postback: title,
+            postback: "https://animeflv.net/",
           },
         ],
       },
-      plataform: "FACEBOOK",
+      platfrom: "FACEBOOK",
     };
   }
   async responseBot(name, intent) {
