@@ -12,10 +12,8 @@ const schemas_1 = require("./schemas");
 const security_module_1 = require("../security/security.module");
 const dished_pre_orders_controller_1 = require("./controllers/dished-pre-orders.controller");
 const pre_orders_controller_1 = require("./controllers/pre-orders.controller");
-const comments_controller_1 = require("./controllers/comments.controller");
 const pre_orders_service_1 = require("./services/pre-orders.service");
 const dish_pre_orders_service_1 = require("./services/dish-pre-orders.service");
-const comment_service_1 = require("./services/comment.service");
 let PreordersModule = class PreordersModule {
 };
 PreordersModule = __decorate([
@@ -32,20 +30,11 @@ PreordersModule = __decorate([
                     schema: schemas_1.PreOrdersSchema,
                     collection: 'preorders',
                 },
-                {
-                    name: 'Comments',
-                    schema: schemas_1.CommentSchema,
-                    collection: 'comments',
-                },
             ]),
             common_1.forwardRef(() => security_module_1.SecurityModule),
         ],
-        controllers: [
-            pre_orders_controller_1.PreOrdersController,
-            dished_pre_orders_controller_1.DishedPreOrdersController,
-            comments_controller_1.CommentsController,
-        ],
-        providers: [pre_orders_service_1.PreOrdersService, dish_pre_orders_service_1.DishPreOrdersService, comment_service_1.CommentService],
+        controllers: [pre_orders_controller_1.PreOrdersController, dished_pre_orders_controller_1.DishedPreOrdersController],
+        providers: [pre_orders_service_1.PreOrdersService, dish_pre_orders_service_1.DishPreOrdersService],
         exports: [mongoose_1.MongooseModule],
     })
 ], PreordersModule);

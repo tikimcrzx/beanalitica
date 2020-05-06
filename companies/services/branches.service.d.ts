@@ -10,16 +10,31 @@ export declare class BranchesService {
     findById(id: string): Promise<Branch>;
     delete(id: string): Promise<Branch>;
     findOne(name: string): Promise<Branch>;
-    menu(name: string): Promise<any[]>;
+    responseFacebookCards(title: any, subtitle: any, imageUri: any, button: any): {
+        card: {
+            title: any;
+            subtitle: any;
+            imageUri: any;
+            buttons: {
+                text: any;
+                postback: string;
+            }[];
+        };
+        platfrom: string;
+        sendAsMessage: boolean;
+    };
+    menu(name: string): Promise<{
+        fulfillmentMessages: any[];
+    }>;
     messageBot(message: string, source: string): {
         fulfillmentText: string;
         source: string;
     };
-    messageBots(message: string, title: string, subtitle: string, imageUrl: string): {
+    messageBots(message: string, title: string, subtitle: string, imageUri: string): {
         card: {
             title: string;
             subtitle: string;
-            imageUrl: string;
+            imageUri: string;
             buttons: {
                 text: string;
                 postback: string;

@@ -5,6 +5,7 @@ export declare class DishedPreOrdersController {
     private readonly dishedPreOrdersService;
     constructor(dishedPreOrdersService: DishPreOrdersService);
     create(createDishedPreOrders: CreateDishedPreOrdersDTO, res: Response): Promise<void>;
+    createNew(createDishedPreOrders: CreateDishedPreOrdersDTO, dish: string, res: Response): Promise<void>;
     findAll(res: Response): Promise<void>;
     findByid(id: string, res: Response): Promise<void>;
     update(id: string, updateDishedPreOrders: CreateDishedPreOrdersDTO, res: Response): Promise<void>;

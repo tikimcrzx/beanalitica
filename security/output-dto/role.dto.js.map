@@ -1,1 +1,1 @@
-{"version":3,"file":"role.dto.js","sourceRoot":"","sources":["../../../projects/beAnalitica/chatbots-backend/src/security/output-dto/role.dto.ts"],"names":[],"mappings":""}
+{"version":3,"file":"role.dto.js","sourceRoot":"","sources":["../../../src/security/output-dto/role.dto.ts"],"names":[],"mappings":""}

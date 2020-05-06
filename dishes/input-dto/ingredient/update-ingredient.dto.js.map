@@ -1,1 +1,1 @@
-{"version":3,"file":"update-ingredient.dto.js","sourceRoot":"","sources":["../../../../projects/beAnalitica/chatbots-backend/src/dishes/input-dto/ingredient/update-ingredient.dto.ts"],"names":[],"mappings":""}
+{"version":3,"file":"update-ingredient.dto.js","sourceRoot":"","sources":["../../../../src/dishes/input-dto/ingredient/update-ingredient.dto.ts"],"names":[],"mappings":""}

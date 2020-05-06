@@ -1,1 +1,1 @@
-{"version":3,"file":"log.model.js","sourceRoot":"","sources":["../../../projects/beAnalitica/chatbots-backend/src/logger/models/log.model.ts"],"names":[],"mappings":""}
+{"version":3,"file":"log.model.js","sourceRoot":"","sources":["../../../src/logger/models/log.model.ts"],"names":[],"mappings":""}

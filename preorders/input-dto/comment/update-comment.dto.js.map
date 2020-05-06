@@ -1,1 +1,1 @@
-{"version":3,"file":"update-comment.dto.js","sourceRoot":"","sources":["../../../../projects/beAnalitica/chatbots-backend/src/preorders/input-dto/comment/update-comment.dto.ts"],"names":[],"mappings":""}
+{"version":3,"file":"update-comment.dto.js","sourceRoot":"","sources":["../../../../src/preorders/input-dto/comment/update-comment.dto.ts"],"names":[],"mappings":""}

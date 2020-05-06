@@ -1,1 +1,1 @@
-{"version":3,"file":"request.decorator.js","sourceRoot":"","sources":["../../../projects/beAnalitica/chatbots-backend/src/security/decorators/request.decorator.ts"],"names":[],"mappings":""}
+{"version":3,"file":"request.decorator.js","sourceRoot":"","sources":["../../../src/security/decorators/request.decorator.ts"],"names":[],"mappings":""}

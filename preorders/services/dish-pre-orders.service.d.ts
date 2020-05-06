@@ -7,6 +7,7 @@ export declare class DishPreOrdersService {
     create(createDishPreOrders: CreateDishedPreOrdersDTO): Promise<DishPreOrders>;
     update(id: string, updateDishedPreOrders: CreateDishedPreOrdersDTO): Promise<DishPreOrders>;
     findAll(): Promise<DishPreOrders[]>;
+    findOne(dish: string): Promise<DishPreOrders>;
     findById(id: string): Promise<DishPreOrders>;
     delete(id: string): Promise<DishPreOrders>;
 }

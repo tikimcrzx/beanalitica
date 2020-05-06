@@ -1,1 +1,1 @@
-{"version":3,"file":"create-dished-pre-orders.dto.js","sourceRoot":"","sources":["../../../../projects/beAnalitica/chatbots-backend/src/preorders/input-dto/dishpreorders/create-dished-pre-orders.dto.ts"],"names":[],"mappings":""}
+{"version":3,"file":"create-dished-pre-orders.dto.js","sourceRoot":"","sources":["../../../../src/preorders/input-dto/dishpreorders/create-dished-pre-orders.dto.ts"],"names":[],"mappings":""}

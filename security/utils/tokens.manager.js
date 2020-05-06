@@ -13,14 +13,14 @@ let TokensManager = class TokensManager {
     generateToken(userDTO) {
         return jwt.sign(userDTO, config.adminTokenPhrase, {
             expiresIn: config.adminTokenTimeout,
-            algorithm: "HS512"
+            algorithm: 'HS512',
         });
     }
     verifyToken(token) {
         return new Promise((resolve, reject) => {
             jwt.verify(token, config.adminTokenPhrase, (err, tokenDecoded) => {
                 if (err) {
-                    reject("Token validation error");
+                    reject('Token validation error');
                 }
                 else {
                     resolve(tokenDecoded);

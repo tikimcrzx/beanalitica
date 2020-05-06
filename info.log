@@ -1138,3 +1138,206 @@ info: Mapped {/, POST} route {"context":"RouterExplorer","timestamp":"2020-04-07
 info: Mapped {/, GET} route {"context":"RouterExplorer","timestamp":"2020-04-07T04:22:00.529Z"}
 info: Mapped {/:id, GET} route {"context":"RouterExplorer","timestamp":"2020-04-07T04:22:00.529Z"}
 info: Nest application successfully started {"context":"NestApplication","timestamp":"2020-04-07T04:22:00.541Z"}
+info: UsersController {/api/v1/users}: {"context":"RoutesResolver","timestamp":"2020-05-06T02:58:45.788Z"}
+info: Mapped {/, GET} route {"context":"RouterExplorer","timestamp":"2020-05-06T02:58:45.799Z"}
+info: Mapped {/:id, GET} route {"context":"RouterExplorer","timestamp":"2020-05-06T02:58:45.800Z"}
+info: Mapped {/, POST} route {"context":"RouterExplorer","timestamp":"2020-05-06T02:58:45.803Z"}
+info: Mapped {/, PUT} route {"context":"RouterExplorer","timestamp":"2020-05-06T02:58:45.805Z"}
+info: Mapped {/:id, DELETE} route {"context":"RouterExplorer","timestamp":"2020-05-06T02:58:45.812Z"}
+info: Mapped {/duplication/:email, GET} route {"context":"RouterExplorer","timestamp":"2020-05-06T02:58:45.872Z"}
+info: BranchesController {/api/v1/branches}: {"context":"RoutesResolver","timestamp":"2020-05-06T02:58:45.874Z"}
+info: Mapped {/, POST} route {"context":"RouterExplorer","timestamp":"2020-05-06T02:58:45.877Z"}
+info: Mapped {/location, POST} route {"context":"RouterExplorer","timestamp":"2020-05-06T02:58:45.929Z"}
+info: Mapped {/menu, POST} route {"context":"RouterExplorer","timestamp":"2020-05-06T02:58:45.949Z"}
+info: Mapped {/schedule, POST} route {"context":"RouterExplorer","timestamp":"2020-05-06T02:58:45.950Z"}
+info: Mapped {/name/:name, GET} route {"context":"RouterExplorer","timestamp":"2020-05-06T02:58:45.950Z"}
+info: Mapped {/, GET} route {"context":"RouterExplorer","timestamp":"2020-05-06T02:58:45.951Z"}
+info: Mapped {/:id, GET} route {"context":"RouterExplorer","timestamp":"2020-05-06T02:58:45.951Z"}
+info: Mapped {/:id, PUT} route {"context":"RouterExplorer","timestamp":"2020-05-06T02:58:45.955Z"}
+info: Mapped {/:id, DELETE} route {"context":"RouterExplorer","timestamp":"2020-05-06T02:58:45.957Z"}
+info: CompaniesController {/api/v1/companies}: {"context":"RoutesResolver","timestamp":"2020-05-06T02:58:45.958Z"}
+info: Mapped {/, GET} route {"context":"RouterExplorer","timestamp":"2020-05-06T02:58:45.958Z"}
+info: Mapped {/:id, GET} route {"context":"RouterExplorer","timestamp":"2020-05-06T02:58:45.982Z"}
+info: Mapped {/name/:name, GET} route {"context":"RouterExplorer","timestamp":"2020-05-06T02:58:45.983Z"}
+info: Mapped {/, POST} route {"context":"RouterExplorer","timestamp":"2020-05-06T02:58:45.984Z"}
+info: Mapped {/:id, PUT} route {"context":"RouterExplorer","timestamp":"2020-05-06T02:58:45.985Z"}
+info: Mapped {/:id, DELETE} route {"context":"RouterExplorer","timestamp":"2020-05-06T02:58:45.985Z"}
+info: Mapped {/name/:name, GET} route {"context":"RouterExplorer","timestamp":"2020-05-06T02:58:45.986Z"}
+info: ContactsController {/api/v1/contacts}: {"context":"RoutesResolver","timestamp":"2020-05-06T02:58:45.987Z"}
+info: Mapped {/, GET} route {"context":"RouterExplorer","timestamp":"2020-05-06T02:58:45.988Z"}
+info: Mapped {/:id, GET} route {"context":"RouterExplorer","timestamp":"2020-05-06T02:58:45.989Z"}
+info: Mapped {/, POST} route {"context":"RouterExplorer","timestamp":"2020-05-06T02:58:45.989Z"}
+info: Mapped {/:id, PUT} route {"context":"RouterExplorer","timestamp":"2020-05-06T02:58:45.990Z"}
+info: SecurityController {/api/v1/security}: {"context":"RoutesResolver","timestamp":"2020-05-06T02:58:45.990Z"}
+info: Mapped {/login, POST} route {"context":"RouterExplorer","timestamp":"2020-05-06T02:58:45.991Z"}
+info: SecurityEnumsController {/api/v1/securityenums}: {"context":"RoutesResolver","timestamp":"2020-05-06T02:58:45.991Z"}
+info: Mapped {/roles, GET} route {"context":"RouterExplorer","timestamp":"2020-05-06T02:58:45.993Z"}
+info: ImagesController {/api/v1/images}: {"context":"RoutesResolver","timestamp":"2020-05-06T02:58:46.008Z"}
+info: Mapped {/upload/ordersignature, POST} route {"context":"RouterExplorer","timestamp":"2020-05-06T02:58:46.045Z"}
+info: Mapped {/:id, GET} route {"context":"RouterExplorer","timestamp":"2020-05-06T02:58:46.048Z"}
+info: OptionsController {/api/v1/options}: {"context":"RoutesResolver","timestamp":"2020-05-06T02:58:46.048Z"}
+info: Mapped {/, GET} route {"context":"RouterExplorer","timestamp":"2020-05-06T02:58:46.049Z"}
+info: Mapped {/, PUT} route {"context":"RouterExplorer","timestamp":"2020-05-06T02:58:46.049Z"}
+info: HomeController {/api/v1/home}: {"context":"RoutesResolver","timestamp":"2020-05-06T02:58:46.050Z"}
+info: Mapped {/, POST} route {"context":"RouterExplorer","timestamp":"2020-05-06T02:58:46.050Z"}
+info: IngredientsController {/api/v1/ingredients}: {"context":"RoutesResolver","timestamp":"2020-05-06T02:58:46.051Z"}
+info: Mapped {/, POST} route {"context":"RouterExplorer","timestamp":"2020-05-06T02:58:46.051Z"}
+info: Mapped {/:id, PUT} route {"context":"RouterExplorer","timestamp":"2020-05-06T02:58:46.052Z"}
+info: Mapped {/, GET} route {"context":"RouterExplorer","timestamp":"2020-05-06T02:58:46.052Z"}
+info: Mapped {/:id, GET} route {"context":"RouterExplorer","timestamp":"2020-05-06T02:58:46.053Z"}
+info: Mapped {/:id, DELETE} route {"context":"RouterExplorer","timestamp":"2020-05-06T02:58:46.053Z"}
+info: DishesController {/api/v1/dishes}: {"context":"RoutesResolver","timestamp":"2020-05-06T02:58:46.054Z"}
+info: Mapped {/, POST} route {"context":"RouterExplorer","timestamp":"2020-05-06T02:58:46.054Z"}
+info: Mapped {/, GET} route {"context":"RouterExplorer","timestamp":"2020-05-06T02:58:46.055Z"}
+info: Mapped {/:id, GET} route {"context":"RouterExplorer","timestamp":"2020-05-06T02:58:46.055Z"}
+info: Mapped {/:id, PATCH} route {"context":"RouterExplorer","timestamp":"2020-05-06T02:58:46.056Z"}
+info: PreOrdersController {/api/v1/preorders}: {"context":"RoutesResolver","timestamp":"2020-05-06T02:58:46.056Z"}
+info: Mapped {/, POST} route {"context":"RouterExplorer","timestamp":"2020-05-06T02:58:46.057Z"}
+info: Mapped {/, GET} route {"context":"RouterExplorer","timestamp":"2020-05-06T02:58:46.058Z"}
+info: Mapped {/:id, GET} route {"context":"RouterExplorer","timestamp":"2020-05-06T02:58:46.058Z"}
+info: Mapped {/:id, PUT} route {"context":"RouterExplorer","timestamp":"2020-05-06T02:58:46.059Z"}
+info: Mapped {/:id, DELETE} route {"context":"RouterExplorer","timestamp":"2020-05-06T02:58:46.073Z"}
+info: DishedPreOrdersController {/api/v1/dishedpreoreders}: {"context":"RoutesResolver","timestamp":"2020-05-06T02:58:46.073Z"}
+info: Mapped {/, POST} route {"context":"RouterExplorer","timestamp":"2020-05-06T02:58:46.074Z"}
+info: Mapped {/:dish, GET} route {"context":"RouterExplorer","timestamp":"2020-05-06T02:58:46.075Z"}
+info: Mapped {/, GET} route {"context":"RouterExplorer","timestamp":"2020-05-06T02:58:46.075Z"}
+info: Mapped {/name/:id, GET} route {"context":"RouterExplorer","timestamp":"2020-05-06T02:58:46.090Z"}
+info: Mapped {/:id, PUT} route {"context":"RouterExplorer","timestamp":"2020-05-06T02:58:46.092Z"}
+info: Mapped {/:id, DELETE} route {"context":"RouterExplorer","timestamp":"2020-05-06T02:58:46.108Z"}
+info: Nest application successfully started {"context":"NestApplication","timestamp":"2020-05-06T02:58:46.117Z"}
+info: UsersController {/api/v1/users}: {"context":"RoutesResolver","timestamp":"2020-05-06T03:03:17.002Z"}
+info: Mapped {/, GET} route {"context":"RouterExplorer","timestamp":"2020-05-06T03:03:17.006Z"}
+info: Mapped {/:id, GET} route {"context":"RouterExplorer","timestamp":"2020-05-06T03:03:17.008Z"}
+info: Mapped {/, POST} route {"context":"RouterExplorer","timestamp":"2020-05-06T03:03:17.019Z"}
+info: Mapped {/, PUT} route {"context":"RouterExplorer","timestamp":"2020-05-06T03:03:17.020Z"}
+info: Mapped {/:id, DELETE} route {"context":"RouterExplorer","timestamp":"2020-05-06T03:03:17.021Z"}
+info: Mapped {/duplication/:email, GET} route {"context":"RouterExplorer","timestamp":"2020-05-06T03:03:17.022Z"}
+info: BranchesController {/api/v1/branches}: {"context":"RoutesResolver","timestamp":"2020-05-06T03:03:17.022Z"}
+info: Mapped {/, POST} route {"context":"RouterExplorer","timestamp":"2020-05-06T03:03:17.035Z"}
+info: Mapped {/location, POST} route {"context":"RouterExplorer","timestamp":"2020-05-06T03:03:17.037Z"}
+info: Mapped {/menu, POST} route {"context":"RouterExplorer","timestamp":"2020-05-06T03:03:17.038Z"}
+info: Mapped {/schedule, POST} route {"context":"RouterExplorer","timestamp":"2020-05-06T03:03:17.038Z"}
+info: Mapped {/name/:name, GET} route {"context":"RouterExplorer","timestamp":"2020-05-06T03:03:17.039Z"}
+info: Mapped {/, GET} route {"context":"RouterExplorer","timestamp":"2020-05-06T03:03:17.041Z"}
+info: Mapped {/:id, GET} route {"context":"RouterExplorer","timestamp":"2020-05-06T03:03:17.053Z"}
+info: Mapped {/:id, PUT} route {"context":"RouterExplorer","timestamp":"2020-05-06T03:03:17.054Z"}
+info: Mapped {/:id, DELETE} route {"context":"RouterExplorer","timestamp":"2020-05-06T03:03:17.055Z"}
+info: CompaniesController {/api/v1/companies}: {"context":"RoutesResolver","timestamp":"2020-05-06T03:03:17.056Z"}
+info: Mapped {/, GET} route {"context":"RouterExplorer","timestamp":"2020-05-06T03:03:17.070Z"}
+info: Mapped {/:id, GET} route {"context":"RouterExplorer","timestamp":"2020-05-06T03:03:17.071Z"}
+info: Mapped {/name/:name, GET} route {"context":"RouterExplorer","timestamp":"2020-05-06T03:03:17.072Z"}
+info: Mapped {/, POST} route {"context":"RouterExplorer","timestamp":"2020-05-06T03:03:17.073Z"}
+info: Mapped {/:id, PUT} route {"context":"RouterExplorer","timestamp":"2020-05-06T03:03:17.086Z"}
+info: Mapped {/:id, DELETE} route {"context":"RouterExplorer","timestamp":"2020-05-06T03:03:17.087Z"}
+info: Mapped {/name/:name, GET} route {"context":"RouterExplorer","timestamp":"2020-05-06T03:03:17.088Z"}
+info: ContactsController {/api/v1/contacts}: {"context":"RoutesResolver","timestamp":"2020-05-06T03:03:17.088Z"}
+info: Mapped {/, GET} route {"context":"RouterExplorer","timestamp":"2020-05-06T03:03:17.089Z"}
+info: Mapped {/:id, GET} route {"context":"RouterExplorer","timestamp":"2020-05-06T03:03:17.103Z"}
+info: Mapped {/, POST} route {"context":"RouterExplorer","timestamp":"2020-05-06T03:03:17.104Z"}
+info: Mapped {/:id, PUT} route {"context":"RouterExplorer","timestamp":"2020-05-06T03:03:17.105Z"}
+info: SecurityController {/api/v1/security}: {"context":"RoutesResolver","timestamp":"2020-05-06T03:03:17.106Z"}
+info: Mapped {/login, POST} route {"context":"RouterExplorer","timestamp":"2020-05-06T03:03:17.118Z"}
+info: SecurityEnumsController {/api/v1/securityenums}: {"context":"RoutesResolver","timestamp":"2020-05-06T03:03:17.119Z"}
+info: Mapped {/roles, GET} route {"context":"RouterExplorer","timestamp":"2020-05-06T03:03:17.121Z"}
+info: ImagesController {/api/v1/images}: {"context":"RoutesResolver","timestamp":"2020-05-06T03:03:17.121Z"}
+info: Mapped {/upload/ordersignature, POST} route {"context":"RouterExplorer","timestamp":"2020-05-06T03:03:17.122Z"}
+info: Mapped {/:id, GET} route {"context":"RouterExplorer","timestamp":"2020-05-06T03:03:17.137Z"}
+info: OptionsController {/api/v1/options}: {"context":"RoutesResolver","timestamp":"2020-05-06T03:03:17.138Z"}
+info: Mapped {/, GET} route {"context":"RouterExplorer","timestamp":"2020-05-06T03:03:17.138Z"}
+info: Mapped {/, PUT} route {"context":"RouterExplorer","timestamp":"2020-05-06T03:03:17.139Z"}
+info: HomeController {/api/v1/home}: {"context":"RoutesResolver","timestamp":"2020-05-06T03:03:17.141Z"}
+info: Mapped {/, POST} route {"context":"RouterExplorer","timestamp":"2020-05-06T03:03:17.153Z"}
+info: IngredientsController {/api/v1/ingredients}: {"context":"RoutesResolver","timestamp":"2020-05-06T03:03:17.154Z"}
+info: Mapped {/, POST} route {"context":"RouterExplorer","timestamp":"2020-05-06T03:03:17.155Z"}
+info: Mapped {/:id, PUT} route {"context":"RouterExplorer","timestamp":"2020-05-06T03:03:17.156Z"}
+info: Mapped {/, GET} route {"context":"RouterExplorer","timestamp":"2020-05-06T03:03:17.169Z"}
+info: Mapped {/:id, GET} route {"context":"RouterExplorer","timestamp":"2020-05-06T03:03:17.171Z"}
+info: Mapped {/:id, DELETE} route {"context":"RouterExplorer","timestamp":"2020-05-06T03:03:17.171Z"}
+info: DishesController {/api/v1/dishes}: {"context":"RoutesResolver","timestamp":"2020-05-06T03:03:17.172Z"}
+info: Mapped {/, POST} route {"context":"RouterExplorer","timestamp":"2020-05-06T03:03:17.173Z"}
+info: Mapped {/, GET} route {"context":"RouterExplorer","timestamp":"2020-05-06T03:03:17.186Z"}
+info: Mapped {/:id, GET} route {"context":"RouterExplorer","timestamp":"2020-05-06T03:03:17.188Z"}
+info: Mapped {/:id, PATCH} route {"context":"RouterExplorer","timestamp":"2020-05-06T03:03:17.188Z"}
+info: PreOrdersController {/api/v1/preorders}: {"context":"RoutesResolver","timestamp":"2020-05-06T03:03:17.189Z"}
+info: Mapped {/, POST} route {"context":"RouterExplorer","timestamp":"2020-05-06T03:03:17.191Z"}
+info: Mapped {/, GET} route {"context":"RouterExplorer","timestamp":"2020-05-06T03:03:17.205Z"}
+info: Mapped {/:id, GET} route {"context":"RouterExplorer","timestamp":"2020-05-06T03:03:17.208Z"}
+info: Mapped {/:id, PUT} route {"context":"RouterExplorer","timestamp":"2020-05-06T03:03:17.220Z"}
+info: Mapped {/:id, DELETE} route {"context":"RouterExplorer","timestamp":"2020-05-06T03:03:17.221Z"}
+info: DishedPreOrdersController {/api/v1/dishedpreoreders}: {"context":"RoutesResolver","timestamp":"2020-05-06T03:03:17.221Z"}
+info: Mapped {/, POST} route {"context":"RouterExplorer","timestamp":"2020-05-06T03:03:17.224Z"}
+info: Mapped {/:dish, GET} route {"context":"RouterExplorer","timestamp":"2020-05-06T03:03:17.237Z"}
+info: Mapped {/, GET} route {"context":"RouterExplorer","timestamp":"2020-05-06T03:03:17.238Z"}
+info: Mapped {/name/:id, GET} route {"context":"RouterExplorer","timestamp":"2020-05-06T03:03:17.239Z"}
+info: Mapped {/:id, PUT} route {"context":"RouterExplorer","timestamp":"2020-05-06T03:03:17.272Z"}
+info: Mapped {/:id, DELETE} route {"context":"RouterExplorer","timestamp":"2020-05-06T03:03:17.287Z"}
+info: Nest application successfully started {"context":"NestApplication","timestamp":"2020-05-06T03:03:17.302Z"}
+error: Path: /api/v1/branches/menu - Method: POST - Body: {"responseId":"efb557ff-d6db-4ccb-9b1b-db723f8ea426-9aa0e9ed","queryResult":{"queryText":"cual es el menu de suchilitos?","parameters":{"Restaurant":"suchilitos"},"allRequiredParamsPresent":true,"fulfillmentText":"el menu es","fulfillmentMessages":[{"text":{"text":["el menu es"]}}],"intent":{"name":"projects/chatbot-bsifjs/agent/intents/130b8025-8398-4e54-9fca-0d72d32bc2ab","displayName":"PruebaMenuRestaurant"},"intentDetectionConfidence":1,"languageCode":"es"}} - Message: Cannot read property 'menu' of null {"timestamp":"2020-05-06T03:05:15.584Z"}
+error: Log validation failed: user: Path `user` is required. {"timestamp":"2020-05-06T03:05:15.625Z"}
+info: UsersController {/api/v1/users}: {"context":"RoutesResolver","timestamp":"2020-05-06T03:08:09.613Z"}
+info: Mapped {/, GET} route {"context":"RouterExplorer","timestamp":"2020-05-06T03:08:09.618Z"}
+info: Mapped {/:id, GET} route {"context":"RouterExplorer","timestamp":"2020-05-06T03:08:09.628Z"}
+info: Mapped {/, POST} route {"context":"RouterExplorer","timestamp":"2020-05-06T03:08:09.631Z"}
+info: Mapped {/, PUT} route {"context":"RouterExplorer","timestamp":"2020-05-06T03:08:09.632Z"}
+info: Mapped {/:id, DELETE} route {"context":"RouterExplorer","timestamp":"2020-05-06T03:08:09.633Z"}
+info: Mapped {/duplication/:email, GET} route {"context":"RouterExplorer","timestamp":"2020-05-06T03:08:09.645Z"}
+info: BranchesController {/api/v1/branches}: {"context":"RoutesResolver","timestamp":"2020-05-06T03:08:09.648Z"}
+info: Mapped {/, POST} route {"context":"RouterExplorer","timestamp":"2020-05-06T03:08:09.649Z"}
+info: Mapped {/location, POST} route {"context":"RouterExplorer","timestamp":"2020-05-06T03:08:09.649Z"}
+info: Mapped {/menu, POST} route {"context":"RouterExplorer","timestamp":"2020-05-06T03:08:09.650Z"}
+info: Mapped {/schedule, POST} route {"context":"RouterExplorer","timestamp":"2020-05-06T03:08:09.652Z"}
+info: Mapped {/name/:name, GET} route {"context":"RouterExplorer","timestamp":"2020-05-06T03:08:09.662Z"}
+info: Mapped {/, GET} route {"context":"RouterExplorer","timestamp":"2020-05-06T03:08:09.665Z"}
+info: Mapped {/:id, GET} route {"context":"RouterExplorer","timestamp":"2020-05-06T03:08:09.666Z"}
+info: Mapped {/:id, PUT} route {"context":"RouterExplorer","timestamp":"2020-05-06T03:08:09.678Z"}
+info: Mapped {/:id, DELETE} route {"context":"RouterExplorer","timestamp":"2020-05-06T03:08:09.681Z"}
+info: CompaniesController {/api/v1/companies}: {"context":"RoutesResolver","timestamp":"2020-05-06T03:08:09.682Z"}
+info: Mapped {/, GET} route {"context":"RouterExplorer","timestamp":"2020-05-06T03:08:09.682Z"}
+info: Mapped {/:id, GET} route {"context":"RouterExplorer","timestamp":"2020-05-06T03:08:09.683Z"}
+info: Mapped {/name/:name, GET} route {"context":"RouterExplorer","timestamp":"2020-05-06T03:08:09.685Z"}
+info: Mapped {/, POST} route {"context":"RouterExplorer","timestamp":"2020-05-06T03:08:09.696Z"}
+info: Mapped {/:id, PUT} route {"context":"RouterExplorer","timestamp":"2020-05-06T03:08:09.698Z"}
+info: Mapped {/:id, DELETE} route {"context":"RouterExplorer","timestamp":"2020-05-06T03:08:09.699Z"}
+info: Mapped {/name/:name, GET} route {"context":"RouterExplorer","timestamp":"2020-05-06T03:08:09.700Z"}
+info: ContactsController {/api/v1/contacts}: {"context":"RoutesResolver","timestamp":"2020-05-06T03:08:09.715Z"}
+info: Mapped {/, GET} route {"context":"RouterExplorer","timestamp":"2020-05-06T03:08:09.717Z"}
+info: Mapped {/:id, GET} route {"context":"RouterExplorer","timestamp":"2020-05-06T03:08:09.730Z"}
+info: Mapped {/, POST} route {"context":"RouterExplorer","timestamp":"2020-05-06T03:08:09.732Z"}
+info: Mapped {/:id, PUT} route {"context":"RouterExplorer","timestamp":"2020-05-06T03:08:09.733Z"}
+info: SecurityController {/api/v1/security}: {"context":"RoutesResolver","timestamp":"2020-05-06T03:08:09.735Z"}
+info: Mapped {/login, POST} route {"context":"RouterExplorer","timestamp":"2020-05-06T03:08:09.749Z"}
+info: SecurityEnumsController {/api/v1/securityenums}: {"context":"RoutesResolver","timestamp":"2020-05-06T03:08:09.751Z"}
+info: Mapped {/roles, GET} route {"context":"RouterExplorer","timestamp":"2020-05-06T03:08:09.765Z"}
+info: ImagesController {/api/v1/images}: {"context":"RoutesResolver","timestamp":"2020-05-06T03:08:09.766Z"}
+info: Mapped {/upload/ordersignature, POST} route {"context":"RouterExplorer","timestamp":"2020-05-06T03:08:09.784Z"}
+info: Mapped {/:id, GET} route {"context":"RouterExplorer","timestamp":"2020-05-06T03:08:09.789Z"}
+info: OptionsController {/api/v1/options}: {"context":"RoutesResolver","timestamp":"2020-05-06T03:08:09.790Z"}
+info: Mapped {/, GET} route {"context":"RouterExplorer","timestamp":"2020-05-06T03:08:09.791Z"}
+info: Mapped {/, PUT} route {"context":"RouterExplorer","timestamp":"2020-05-06T03:08:09.791Z"}
+info: HomeController {/api/v1/home}: {"context":"RoutesResolver","timestamp":"2020-05-06T03:08:09.793Z"}
+info: Mapped {/, POST} route {"context":"RouterExplorer","timestamp":"2020-05-06T03:08:09.793Z"}
+info: IngredientsController {/api/v1/ingredients}: {"context":"RoutesResolver","timestamp":"2020-05-06T03:08:09.794Z"}
+info: Mapped {/, POST} route {"context":"RouterExplorer","timestamp":"2020-05-06T03:08:09.795Z"}
+info: Mapped {/:id, PUT} route {"context":"RouterExplorer","timestamp":"2020-05-06T03:08:09.796Z"}
+info: Mapped {/, GET} route {"context":"RouterExplorer","timestamp":"2020-05-06T03:08:09.797Z"}
+info: Mapped {/:id, GET} route {"context":"RouterExplorer","timestamp":"2020-05-06T03:08:09.797Z"}
+info: Mapped {/:id, DELETE} route {"context":"RouterExplorer","timestamp":"2020-05-06T03:08:09.798Z"}
+info: DishesController {/api/v1/dishes}: {"context":"RoutesResolver","timestamp":"2020-05-06T03:08:09.799Z"}
+info: Mapped {/, POST} route {"context":"RouterExplorer","timestamp":"2020-05-06T03:08:09.824Z"}
+info: Mapped {/, GET} route {"context":"RouterExplorer","timestamp":"2020-05-06T03:08:09.827Z"}
+info: Mapped {/:id, GET} route {"context":"RouterExplorer","timestamp":"2020-05-06T03:08:09.828Z"}
+info: Mapped {/:id, PATCH} route {"context":"RouterExplorer","timestamp":"2020-05-06T03:08:09.829Z"}
+info: PreOrdersController {/api/v1/preorders}: {"context":"RoutesResolver","timestamp":"2020-05-06T03:08:09.829Z"}
+info: Mapped {/, POST} route {"context":"RouterExplorer","timestamp":"2020-05-06T03:08:09.830Z"}
+info: Mapped {/, GET} route {"context":"RouterExplorer","timestamp":"2020-05-06T03:08:09.831Z"}
+info: Mapped {/:id, GET} route {"context":"RouterExplorer","timestamp":"2020-05-06T03:08:09.832Z"}
+info: Mapped {/:id, PUT} route {"context":"RouterExplorer","timestamp":"2020-05-06T03:08:09.832Z"}
+info: Mapped {/:id, DELETE} route {"context":"RouterExplorer","timestamp":"2020-05-06T03:08:09.833Z"}
+info: DishedPreOrdersController {/api/v1/dishedpreoreders}: {"context":"RoutesResolver","timestamp":"2020-05-06T03:08:09.845Z"}
+info: Mapped {/, POST} route {"context":"RouterExplorer","timestamp":"2020-05-06T03:08:09.847Z"}
+info: Mapped {/:dish, GET} route {"context":"RouterExplorer","timestamp":"2020-05-06T03:08:09.849Z"}
+info: Mapped {/, GET} route {"context":"RouterExplorer","timestamp":"2020-05-06T03:08:09.850Z"}
+info: Mapped {/name/:id, GET} route {"context":"RouterExplorer","timestamp":"2020-05-06T03:08:09.850Z"}
+info: Mapped {/:id, PUT} route {"context":"RouterExplorer","timestamp":"2020-05-06T03:08:09.865Z"}
+info: Mapped {/:id, DELETE} route {"context":"RouterExplorer","timestamp":"2020-05-06T03:08:09.869Z"}
+info: Nest application successfully started {"context":"NestApplication","timestamp":"2020-05-06T03:08:09.885Z"}

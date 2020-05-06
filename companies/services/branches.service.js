@@ -48,7 +48,6 @@ let BranchesService = class BranchesService {
   async update(id, updateBranchDTO) {
     const branchUpdated = await this.branchModel.findById(id);
     branchUpdated.name = updateBranchDTO.name;
-    branchUpdated.contact = updateBranchDTO.contact;
     branchUpdated.save();
     return branchUpdated;
   }
@@ -111,7 +110,7 @@ let BranchesService = class BranchesService {
         path: "menu",
         model: "Dish",
         populate: { path: "ingredients", model: "Ingredient", select: "name" },
-        select: "name",
+        select: "name _id",
       })
       .populate({
         path: "company",
@@ -129,6 +128,23 @@ let BranchesService = class BranchesService {
     }
     return branch;
   }
+  responseFacebookCards(title, subtitle, imageUri, button, id) {
+    return {
+      card: {
+        title,
+        subtitle,
+        imageUri,
+        buttons: [
+          {
+            text: button,
+            postback: `https://beanalitica.herokuapp.com/api/v1/dishedpreoreders/${id}`,
+          },
+        ],
+      },
+      platfrom: "FACEBOOK",
+      sendAsMessage: true,
+    };
+  }
   async menu(name) {
     const branch = await this.branchModel
       .findOne({ name })
@@ -138,9 +154,9 @@ let BranchesService = class BranchesService {
         populate: {
           path: "ingredients",
           model: "Ingredient",
-          select: "name details",
+          select: "name",
         },
-        select: "name image details",
+        select: "name image _id",
       })
       .populate({
         path: "company",
@@ -156,11 +172,12 @@ let BranchesService = class BranchesService {
     let array = [];
     for (let index = 0; index < branch.menu.length; index++) {
       array.push(
-        this.messageBots(
-          "Ordenar",
+        this.responseFacebookCards(
           branch.menu[index].name,
-          `${branch.menu[index].details[0].size}: $${branch.menu[index].details[0].price} ${branch.menu[index].details[1].size}: $${branch.menu[index].details[1].price} ${branch.menu[index].details[2].size}: $${branch.menu[index].details[2].price}`,
-          branch.menu[index].image
+          branch.menu[index].name,
+          branch.menu[index].image,
+          "ordenar",
+          branch.menu[index]._id
         )
       );
     }
@@ -174,96 +191,7 @@ let BranchesService = class BranchesService {
       source,
     };
   }
-
-  reports() {
-    return {
-      responseId: "09f94691-32d8-4371-88e1-25b5bfbe6e0c-9aa0e9ed",
-      queryResult: {
-        queryText: "Elegir restaurante",
-        parameters: {},
-        allRequiredParamsPresent: true,
-        fulfillmentText: "¿Que restaurante desea elegir?",
-        fulfillmentMessages: [
-          {
-            text: {
-              text: ["¿Que restaurante desea elegir?"],
-            },
-            platform: "FACEBOOK",
-          },
-          {
-            card: {
-              title: "Sushilito",
-              subtitle: "Horario",
-              imageUri:
-                "https://lh3.googleusercontent.com/proxy/uEWzeVQLDVg4PIa_k7EBCu-cBrgJT-A7dAYMOQFYERZFkOAUlBZvTSeY-zEFIWMDPkzLmImVpInAzF1-Tf-V9locYnx72oJhZFVqxu6l0NiRHdPz5Q",
-              buttons: [
-                {
-                  text: "Sushilito",
-                },
-              ],
-            },
-            platform: "FACEBOOK",
-          },
-          {
-            card: {
-              title: "Sushi Van",
-              subtitle: "Horario",
-              imageUri:
-                "https://www.vamosalantro.com/usuariosva/fotos/113681.jpg",
-              buttons: [
-                {
-                  text: "Sushi Van",
-                },
-              ],
-            },
-            platform: "FACEBOOK",
-          },
-          {
-            card: {
-              title: "La Panga",
-              subtitle: "Horario",
-              imageUri:
-                "https://i0.wp.com/foodandpleasure.com/wp-content/uploads/2018/06/piantao-3.jpg?fit=2800%2C1867&ssl=1",
-              buttons: [
-                {
-                  text: "La Panga",
-                },
-              ],
-            },
-            platform: "FACEBOOK",
-          },
-          {
-            card: {
-              title: "Gana Grup",
-              subtitle: "Horario",
-              imageUri:
-                "https://cherry-brightspot.s3.amazonaws.com/0e/30/84a63a174e489e99a593ee483ed5/buffalo-wild-wings-sucursal.jpeg",
-              buttons: [
-                {
-                  text: "Gana Grup",
-                },
-              ],
-            },
-            platform: "FACEBOOK",
-          },
-          {
-            text: {
-              text: ["¿Que restaurante desea elegir?"],
-            },
-          },
-        ],
-        intent: {
-          name:
-            "projects/chatbot-bsifjs/agent/intents/15137fa3-f7e8-4c5c-acf6-dad3323aec3a",
-          displayName: "Restaurants",
-        },
-        intentDetectionConfidence: 1,
-        languageCode: "es",
-      },
-    };
-  }
-  //update
-  messageBots(message, title, subtitle, imageUri) {
+  messageBots(message, title, subtitle, imageUri, id) {
     return {
       card: {
         title,
@@ -272,12 +200,11 @@ let BranchesService = class BranchesService {
         buttons: [
           {
             text: message,
-            postback: title,
+            postback: `https://beanalitica.herokuapp.com/api/v1/dishedpreoreders/${id}`,
           },
         ],
       },
-      platfrom: "FACEBOOK",
-      sendAsMessage: true,
+      plataform: "FACEBOOK",
     };
   }
   async responseBot(name, intent) {

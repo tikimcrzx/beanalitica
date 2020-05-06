@@ -1,1 +1,1 @@
-{"version":3,"file":"create-company.dto.js","sourceRoot":"","sources":["../../../../projects/beAnalitica/chatbots-backend/src/companies/input-dto/companies/create-company.dto.ts"],"names":[],"mappings":""}
+{"version":3,"file":"create-company.dto.js","sourceRoot":"","sources":["../../../../src/companies/input-dto/companies/create-company.dto.ts"],"names":[],"mappings":""}

@@ -11,9 +11,9 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var __param = (this && this.__param) || function (paramIndex, decorator) {
     return function (target, key) { decorator(target, key, paramIndex); }
 };
+var _a;
 Object.defineProperty(exports, "__esModule", { value: true });
 const common_1 = require("@nestjs/common");
-const comment_service_1 = require("../services/comment.service");
 let CommentsController = class CommentsController {
     constructor(commentService) {
         this.commentService = commentService;
@@ -55,7 +55,7 @@ __decorate([
 ], CommentsController.prototype, "findById", null);
 CommentsController = __decorate([
     common_1.Controller('comments'),
-    __metadata("design:paramtypes", [comment_service_1.CommentService])
+    __metadata("design:paramtypes", [typeof (_a = typeof CommentService !== "undefined" && CommentService) === "function" ? _a : Object])
 ], CommentsController);
 exports.CommentsController = CommentsController;
 //# sourceMappingURL=comments.controller.js.map

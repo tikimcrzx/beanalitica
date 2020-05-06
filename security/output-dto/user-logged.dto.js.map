@@ -1,1 +1,1 @@
-{"version":3,"file":"user-logged.dto.js","sourceRoot":"","sources":["../../../projects/beAnalitica/chatbots-backend/src/security/output-dto/user-logged.dto.ts"],"names":[],"mappings":""}
+{"version":3,"file":"user-logged.dto.js","sourceRoot":"","sources":["../../../src/security/output-dto/user-logged.dto.ts"],"names":[],"mappings":""}

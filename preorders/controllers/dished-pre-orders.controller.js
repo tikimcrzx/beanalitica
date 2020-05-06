@@ -22,6 +22,21 @@ let DishedPreOrdersController = class DishedPreOrdersController {
         const dishedPreOrdersSaved = await this.dishedPreOrdersService.create(createDishedPreOrders);
         res.status(common_1.HttpStatus.CREATED).json(dishedPreOrdersSaved);
     }
+    async createNew(createDishedPreOrders, dish, res) {
+        const dishPreOrders = await this.dishedPreOrdersService.findOne(dish);
+        let dishes;
+        if (dishPreOrders) {
+            dishPreOrders.quantity++;
+            dishPreOrders.save();
+            dishes = dishPreOrders;
+        }
+        else {
+            createDishedPreOrders.dishes = dish;
+            createDishedPreOrders.quantity = 1;
+            dishes = await this.dishedPreOrdersService.create(createDishedPreOrders);
+        }
+        res.status(common_1.HttpStatus.CREATED).json(dishes);
+    }
     async findAll(res) {
         const dishedPreOrders = await this.dishedPreOrdersService.findAll();
         res.status(common_1.HttpStatus.OK).json(dishedPreOrders);
@@ -48,6 +63,15 @@ __decorate([
     __metadata("design:returntype", Promise)
 ], DishedPreOrdersController.prototype, "create", null);
 __decorate([
+    common_1.Get(':dish'),
+    __param(0, common_1.Body()),
+    __param(1, common_1.Param('dish')),
+    __param(2, common_1.Res()),
+    __metadata("design:type", Function),
+    __metadata("design:paramtypes", [Object, String, Object]),
+    __metadata("design:returntype", Promise)
+], DishedPreOrdersController.prototype, "createNew", null);
+__decorate([
     common_1.Get(),
     __param(0, common_1.Res()),
     __metadata("design:type", Function),
@@ -55,7 +79,7 @@ __decorate([
     __metadata("design:returntype", Promise)
 ], DishedPreOrdersController.prototype, "findAll", null);
 __decorate([
-    common_1.Get(':id'),
+    common_1.Get('name/:id'),
     __param(0, common_1.Param('id')), __param(1, common_1.Res()),
     __metadata("design:type", Function),
     __metadata("design:paramtypes", [String, Object]),

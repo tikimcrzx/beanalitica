@@ -1,4 +1,4 @@
-export declare const URI = "mongodb://127.0.0.1:27017/AnaliticaChatBot";
+export declare const URI: string;
 export declare const connectionOptions: {
     useNewUrlParser: boolean;
     useUnifiedTopology: boolean;

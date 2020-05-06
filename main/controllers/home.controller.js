@@ -19,7 +19,6 @@ let HomeController = class HomeController {
     async home(intentParametersDTO, res) {
         let url = '';
         const displayName = intentParametersDTO.queryResult.intent.displayName;
-        console.log(displayName);
         if (displayName === intents_enum_1.Intents.LOCATION_RESTAURANT) {
             url = url_enum_1.URLs.MENU_URL;
         }

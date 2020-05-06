@@ -26,21 +26,23 @@ let DishPreOrdersService = class DishPreOrdersService {
             .findById(dishPreOrdersSaved.id)
             .populate({ path: 'dishes.size', model: 'Size' });
         let total = 0;
-        dishPreOrders.total = total;
         dishPreOrders.save();
         return dishPreOrdersSaved;
     }
     async update(id, updateDishedPreOrders) {
         const dishPreOrdersUpdated = await this.dishPreOrdersModel.findById(id);
-        dishPreOrdersUpdated.quantity = updateDishedPreOrders.quantity;
-        dishPreOrdersUpdated.comments = updateDishedPreOrders.comments;
         dishPreOrdersUpdated.save();
         return dishPreOrdersUpdated;
     }
     async findAll() {
         const dishPreOrders = await this.dishPreOrdersModel.find();
-        dishPreOrders;
         return dishPreOrders;
+    }
+    async findOne(dish) {
+        const dishPreorder = await this.dishPreOrdersModel.findOne({
+            dishes: dish,
+        });
+        return dishPreorder;
     }
     async findById(id) {
         const dishPreOrders = await this.dishPreOrdersModel.findById(id);

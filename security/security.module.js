@@ -19,17 +19,15 @@ let SecurityModule = class SecurityModule {
 };
 SecurityModule = __decorate([
     common_1.Module({
-        imports: [common_1.forwardRef(() => companies_module_1.CompaniesModule),
-            logger_module_1.LoggerModule],
+        imports: [common_1.forwardRef(() => companies_module_1.CompaniesModule), logger_module_1.LoggerModule],
         providers: [
             users_security_service_1.UsersSecurityService,
             tokens_manager_1.TokensManager,
             tokens_validation_middleware_1.TokensValidationMiddleware,
-            roles_guard_1.RolesGuard
+            roles_guard_1.RolesGuard,
         ],
         controllers: [security_controller_1.SecurityController, security_enums_controller_1.SecurityEnumsController],
-        exports: [tokens_manager_1.TokensManager, tokens_validation_middleware_1.TokensValidationMiddleware,
-            users_security_service_1.UsersSecurityService]
+        exports: [tokens_manager_1.TokensManager, tokens_validation_middleware_1.TokensValidationMiddleware, users_security_service_1.UsersSecurityService],
     })
 ], SecurityModule);
 exports.SecurityModule = SecurityModule;

@@ -1,1 +1,1 @@
-{"version":3,"file":"create-contact.dto.js","sourceRoot":"","sources":["../../../../projects/beAnalitica/chatbots-backend/src/companies/input-dto/contacts/create-contact.dto.ts"],"names":[],"mappings":""}
+{"version":3,"file":"create-contact.dto.js","sourceRoot":"","sources":["../../../../src/companies/input-dto/contacts/create-contact.dto.ts"],"names":[],"mappings":""}
