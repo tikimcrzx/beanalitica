@@ -138,7 +138,6 @@ let BranchesService = class BranchesService {
           {
             text: button,
             postback: `https://beanalitica.herokuapp.com/api/v1/dishedpreoreders/${id}`,
-            messenger_extensions: true,
           },
         ],
       },
