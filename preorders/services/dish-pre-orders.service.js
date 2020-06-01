@@ -1,12 +1,14 @@
 "use strict";
-var __decorate = (this && this.__decorate) ||
+var __decorate =
+  (this && this.__decorate) ||
   function (decorators, target, key, desc) {
     var c = arguments.length,
-      r = c < 3
-        ? target
-        : desc === null
-        ? (desc = Object.getOwnPropertyDescriptor(target, key))
-        : desc,
+      r =
+        c < 3
+          ? target
+          : desc === null
+          ? (desc = Object.getOwnPropertyDescriptor(target, key))
+          : desc,
       d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") {
       r = Reflect.decorate(decorators, target, key, desc);
@@ -19,13 +21,15 @@ var __decorate = (this && this.__decorate) ||
     }
     return c > 3 && r && Object.defineProperty(target, key, r), r;
   };
-var __metadata = (this && this.__metadata) ||
+var __metadata =
+  (this && this.__metadata) ||
   function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") {
       return Reflect.metadata(k, v);
     }
   };
-var __param = (this && this.__param) ||
+var __param =
+  (this && this.__param) ||
   function (paramIndex, decorator) {
     return function (target, key) {
       decorator(target, key, paramIndex);
@@ -55,19 +59,15 @@ let DishPreOrdersService = class DishPreOrdersService {
     return dishPreOrdersUpdated;
   }
   async findAll() {
-    const dishPreOrders = await this.dishPreOrdersModel
-      .find()
-      .populate(
-        {
-          path: "dishes",
-          model: "Dish",
-          populate: {
-            path: "ingredients",
-            model: "Ingredient",
-            select: "name",
-          },
-        },
-      );
+    const dishPreOrders = await this.dishPreOrdersModel.find().populate({
+      path: "dishes",
+      model: "Dish",
+      populate: {
+        path: "ingredients",
+        model: "Ingredient",
+        select: "name",
+      },
+    });
     return dishPreOrders;
   }
   async findOne(dish) {
@@ -92,7 +92,7 @@ DishPreOrdersService = __decorate(
     __param(0, mongoose_1.InjectModel("DishedPreOrders")),
     __metadata("design:paramtypes", [mongoose_2.Model]),
   ],
-  DishPreOrdersService,
+  DishPreOrdersService
 );
 exports.DishPreOrdersService = DishPreOrdersService;
 //# sourceMappingURL=dish-pre-orders.service.js.map
